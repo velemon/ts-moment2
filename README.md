@@ -22,14 +22,14 @@ Till att börja med skapade jag ett interface för alla egenskaper som ska finna
 
 - task: texten för uppgiften
 - completed: boolean som visar om uppgiften är klar eller inte
-- priority: heltal 1–3, där 1 = viktigast och 2 = minst viktigt
+- priority: heltal 1–3, där 1 = viktigast och 3 = minst viktigt
 - createdAt: datum då todo skapades
 - completedAt?: datum då todo markeras som klar (valfri då det inte finns ett slutdatum för uppgiften vid skapandet av den)
 
-Då det var krav på utökad funktionalitet så lades datumen till.
+Då det var krav på utökad funktionalitet så lade jag datumen till.
 
 ### Klass
-Sedan skapade jag klassen TodoList för att hantera all logik kring todo-listan.
+Sedan skapade jag klassen TodoList för att hantera all logik kring todo-listan. Strukturen ser ut såhär:
 
 class TodoList {
     todos: Todo[] = [];
@@ -75,10 +75,12 @@ class TodoList {
 - Hanterar lagring i webbläsaren så att listan finns kvar vid uppdatering
 
 ### DOM och UI
-Hämtar element från DOM med typade element (HTMLFormElement, HTMLInputElement, HTMLUListElement) och skapar nya element med nya värden från formuläret in i UL listan och skriver ut detta till DOM så uppgifterna syns på webbsidan.
+Efter det hämtas element från DOM med typade element (HTMLFormElement, HTMLInputElement, HTMLUListElement) och skapar nya element med nya värden från formuläret in i UL listan och skriver ut detta till DOM så uppgifterna syns på webbsidan. 
 
 ### Formulär
 För formulärshantering så använde jag en händelselyssnare för att vid submit av formuläret så ska värdena först kontrolleras om de är korrekta, är de fel så ska en varning poppa upp annars skickas värdena in i listan. Efter det rensas formuläret och listan laddas om.
+
+e.preventDefault() Hindrar sidan från att laddas om varje gång denna körs.
 
 ## README
 Slutligen skrev jag denna README fil för att det var ett av kraven och här beskriver jag hur jag löste denna uppgift.
