@@ -1,0 +1,122 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgb(216, 255, 235);
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.todo-list {
+  list-style: circle;
+  padding: 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  font-size: inherit;
+}
+
+li {
+  list-style: none;
+  border-radius: 10px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 244, 244, 0.393);
+  padding: 1.2em;
+  margin: 1em;
+  font-weight: 500;
+}
+
+li button {
+  margin: 1em;
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+
+}
+
+button {
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: drop-shadow 0.25s;
+}
+
+button:hover {
+  background-color: #005404;
+  filter: drop-shadow(0 0 0.5em #000000aa);
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form,
+  .todo-list {
+    width: 80%;
+    /* tar hela bredden */
+    max-width: 400px;
+    /* begränsa maxbredd */
+  }
+
+  form {
+    flex-direction: column;
+    /* inputs + button staplas */
+    align-items: stretch;
+    /* inputs fyller hela bredden */
+    gap: 10px;
+  }
+}

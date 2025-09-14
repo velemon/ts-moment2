@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <title>Moment 2</title>
+</head>
+
+<body>
+  <h1>Min todo-lista &#128204;</h1>
+  <div class="container">
+    <form id="todo-form">
+      <input type="text" class="task" placeholder="Uppgift" />
+      <select class="priority">
+        <option value="">Prioritet</option>
+        <option value="1">1 - Viktigast</option>
+        <option value="2">2 - Medel</option>
+        <option value="3">3 - Mindre viktigt</option>
+      </select>
+      <button type="submit">Lägg till</button>
+    </form>
+    <ul class="todo-list"></ul>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
