@@ -9,7 +9,7 @@ interface Todo {
 
 // Klass för att hantera todo-listan
 class TodoList {
-    private todos: Todo[] = [];
+    todos: Todo[] = [];
 
     constructor() {
         this.loadFromLocalStorage();
