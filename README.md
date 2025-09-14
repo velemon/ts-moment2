@@ -28,7 +28,7 @@ Till att börja med skapade jag ett interface för alla egenskaper som ska finna
 
 Då det var krav på utökad funktionalitet så lades datumen till.
 
-###Klass
+### Klass
 Sedan skapade jag klassen TodoList för att hantera all logik kring todo-listan.
 
 class TodoList {
@@ -74,11 +74,11 @@ class TodoList {
 **saveToLocalStorage() / loadFromLocalStorage()**
 - Hanterar lagring i webbläsaren så att listan finns kvar vid uppdatering
 
-###DOM och UI
+### DOM och UI
 Hämtar element från DOM med typade element (HTMLFormElement, HTMLInputElement, HTMLUListElement) och skapar nya element med nya värden från formuläret in i UL listan och skriver ut detta till DOM så uppgifterna syns på webbsidan.
 
-###Formulär
+### Formulär
 För formulärshantering så använde jag en händelselyssnare för att vid submit av formuläret så ska värdena först kontrolleras om de är korrekta, är de fel så ska en varning poppa upp annars skickas värdena in i listan. Efter det rensas formuläret och listan laddas om.
 
-##README
+## README
 Slutligen skrev jag denna README fil för att det var ett av kraven och här beskriver jag hur jag löste denna uppgift.
