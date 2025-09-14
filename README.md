@@ -2,10 +2,10 @@
 
 **Denna uppgift handlar om att skapa en applikation i Typescript där man ska kunna lägga till uppgifter och markera som klara, detta ska sparas mellan sidvisningar i local storage.**
 
-##Skapa projekt
+## Skapa projekt
 Först använde jag Vite och VSCode för att skapa ett automatiserat projekt och ha en utvecklingsmiljö och server där jag hela tiden kan följa automatiserade uppdateringar. Vite transpilerar koden till Javascript. Projektet kopplades även ihop med Git för att versionshanteras på GitHub och sedan publikt visas på Netlify.
 
-##HTML-kod och CSS
+## HTML-kod och CSS
 Jag började med att konstruera html och stil på webbsidan för att kunna se vad som händer. Jag gjorde en form där information ska skrivas in och sedan en tom UL lista där Todos sedan skulle hamna. Med CSS skapade jag styling och responsivitet:
 Flexbox används i en container för layout och media queries gör att formuläret samt listan ändrar layout på mindre skärmar.
 
@@ -15,7 +15,7 @@ Dessa saker skulle finnas med på webbplatsen:
 - En knapp för att markera todos som klara (gjordes dock med Typescript).
 - Webbplatsen skall vara någorlunda snygg och prydlig och fungera väl på stora som små skärmar med bra responsiv design.
 
-##Typescript-kod
+## Typescript-kod
 
 ### Interface
 Till att börja med skapade jag ett interface för alla egenskaper som ska finnas i en Todo:
